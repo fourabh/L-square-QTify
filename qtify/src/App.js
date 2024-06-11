@@ -38,6 +38,10 @@ function App() {
         <Section type="album" title="Top Albums" data={topAlbumData} />
       </div>
 
+      <div className="sectionWrapper">
+        <Section type="album" title="New Albums" data={newAlbumCard} />
+      </div>
+
       {/* <Card data={topAlbumData}/> */}
     </div>
   );
