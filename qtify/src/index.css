@@ -1,12 +1,15 @@
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400; 
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/9eUDzwXNPlv4-jzn4gQSUuSkAgZcXz5NZnkT1zgYGUs.woff2) format('woff2'),
+       url(https://fonts.gstatic.com/s/poppins/v20/9eUDzwXNPlv4-jzn4gQSUuSkAgZcXz5NZnkT1zgYGXVlU.woff) format('woff');
+}
+
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
 }
