@@ -9,3 +9,12 @@ export const fetchTopAlbums = async () => {
     console.error(err);
   }
 };
+
+export const fetchnewAlbumData = async () => {
+  try {
+    const res = await axios.get(`${BACK_ENDPOINT}/albums/new`);
+    return res.data;
+  } catch (err) {
+    console.error(err);
+  }
+};
