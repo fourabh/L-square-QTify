@@ -2,10 +2,10 @@ import { CircularProgress } from "@mui/material";
 import React, { useState } from "react";
 import Card from "../Card/Card";
 import styles from "./Section.module.css";
-// import Carousal from "../Carousal/Carousal";
+import Carousal from "../Carousal/Carousal";
 
 const Section = ({ type, title, data }) => {
-  const [carosalToggle, setCarosalToggle] = useState(true);
+  const [carosalToggle, setCarosalToggle] = useState(false);
 
   const handleToggle = () => {
     setCarosalToggle(!carosalToggle);
@@ -19,29 +19,30 @@ const Section = ({ type, title, data }) => {
     </div>
   );
 
-  // const renderCarousal = () => (
-  //   <Carousal
-  //     renderCardComponent={(item) => (
-  //       <Card key={item.id} data={item} type={type} />
-  //     )}
-  //   />
-  // );
+  const renderCarousal = () => (
+    <Carousal
+      renderCardComponent={(item) => (
+        <Card key={item.id} data={item} type={type} />
+      )}
+      data={data}
+    />
+  );
 
   return (
-    <div>
+    <div className={styles.container}>
       <div className={styles.header}>
-        <h3>{title}</h3>
+        <h3 style={{color:"white"}}>{title}</h3>
         <h4 className={styles.toggleText} onClick={handleToggle}>
-          {/* {carosalToggle ? "Show all" : "Collapse all"} */}
-          {"Show all"}
+          {carosalToggle ? "Show all" : "Collapse"}
+          
         </h4>
       </div>
       {data.length === 0 ? (
         <CircularProgress />
       ) : (
         <div className={styles.cardWrapper}>
-          {/* {!carosalToggle ? renderCards() : renderCarousal()} */}
-          {renderCards()}
+          {!carosalToggle ? renderCards() : renderCarousal()}
+          {/* {renderCards()} */}
         </div>
       )}
     </div>

@@ -24,7 +24,7 @@ const Card = ({ data, type }) => {
                 </div>
               </div>
               <div className={Styles.titleWrapper}>
-                <p>{title}</p>
+                <p style={{color:"#FFFFFF"}}>{title}</p>
               </div>
             </div>
           </Tooltip>
