@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useSwiper } from "swiper/react";
-// import { ReactComponent as RightArrow } from "../../assets/right.svg";
-import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
-import  "./Carousal.module.css";
-
+import RightIcon from "../svg/RightIcon";
+import styles from "./Carousel.module.css";
 
 export default function CarouselRightNavigation() {
   const swiper = useSwiper();
@@ -16,8 +14,8 @@ export default function CarouselRightNavigation() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [swiper]);
   return (
-    <div className="rightNavigation">
-      {!isEnd && <ArrowRightAltIcon onClick={() => swiper.slideNext()} />}
+    <div className={styles.rightNavigation}>
+      {!isEnd && <RightIcon onClick={() => swiper.slideNext()} />}
     </div>
   );
 }

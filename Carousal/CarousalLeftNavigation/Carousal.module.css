@@ -16,9 +16,23 @@
   .leftNavigation {
     cursor: pointer;
     position: absolute;
-    left: 10px;
-    top: 40%;
+    left: 2px;
+    top: 36%;
     transform: translateY(-50%);
     z-index: 10;
     user-select: none;
   }
+  /* .leftNavigation > :first-child{ */
+    /* cursor: pointer;
+    position: absolute;
+    left: 10px;
+    top: 40%;
+    transform: translateY(-50%);
+    z-index: 10;
+    user-select: none; */
+    /* position: relative;
+    top: -13rem;
+    z-index: 1; */
+  /* } */
+
+ 

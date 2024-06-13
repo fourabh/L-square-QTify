@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { useSwiper } from "swiper/react";
 // import { ReactComponent as LeftNav } from "../../../assets/leftNav.svg";
-import KeyboardBackspaceIcon from '@mui/icons-material/KeyboardBackspace';
+// import KeyboardBackspaceIcon from '@mui/icons-material/KeyboardBackspace';
+import  LeftIcon from "../../svg/LeftIcon"
 // import styles from "./Carousal.module.css";
-import "./Carousal.module.css"
+import styles from "./Carousal.module.css"
 
 
 export default function CarouselLeftNavigation() {
@@ -17,8 +18,9 @@ export default function CarouselLeftNavigation() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [swiper]);
   return (
-    <div className="leftNavigation">
-      {!isBegining && <KeyboardBackspaceIcon onClick={() => swiper.slidePrev()} />}
+    <div className={styles.leftNavigation}>
+      {/* {!isBegining && <LeftIcon />} */}
+      {<LeftIcon />}
     </div>
   );
 }
