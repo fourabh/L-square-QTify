@@ -5,7 +5,7 @@ import styles from "./Section.module.css";
 import Carousal from "../Carousel/Carousel";
 
 const Section = ({ type, title, data }) => {
-  const [carosalToggle, setCarosalToggle] = useState(false);
+  const [carosalToggle, setCarosalToggle] = useState(true);
 
   const handleToggle = () => {
     setCarosalToggle(!carosalToggle);
