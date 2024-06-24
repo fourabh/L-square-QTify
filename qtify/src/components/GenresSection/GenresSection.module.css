@@ -1,0 +1,28 @@
+.container{
+  background-color: #121212;
+}
+.header {
+  margin-inline: 31px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.cardWrapper {
+  margin-top: 18px;
+}
+
+.tabList {
+  margin-left: 31px;
+}
+.tabPanel {
+  padding: 0 !important;
+}
+.tabWrapper {
+  .genreTab {
+    color: #FFFFFF;
+  }
+  .selectedTab {
+    color: #FFFFFF;
+  }
+}
